@@ -1,5 +1,9 @@
 # rails-interview / TodoApi
 
+![Tests](https://github.com/mwolman/rails-interview/actions/workflows/tests.yml/badge.svg)
+![RuboCop](https://github.com/mwolman/rails-interview/actions/workflows/rubocop.yml/badge.svg)
+
+
 [![Open in Coder](https://dev.crunchloop.io/open-in-coder.svg)](https://dev.crunchloop.io/templates/fly-containers/workspace?param.Git%20Repository=git@github.com:crunchloop/rails-interview.git)
 
 This is a simple Todo List API built in Ruby on Rails 7. This project is currently being used for Ruby full-stack candidates.
