@@ -4,6 +4,10 @@ Rails.application.routes.draw do
       resources :todo_items, only: %i[create destroy], path: :todoitems, module: "todo_lists" do
         patch :completed, on: :member
       end
+
+      resource :todo_items, only: [], path: :todoitems, module: "todo_lists" do
+        patch :complete_all, on: :collection
+      end
     end
   end
 
