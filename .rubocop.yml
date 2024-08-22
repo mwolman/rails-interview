@@ -17,13 +17,17 @@ Metrics/BlockLength:
   Exclude:
     - config/environments/development.rb
 
+Rails/SkipsModelValidations:
+  Exclude:
+   - app/jobs/complete_all_todo_items_job.rb
+
 RSpec/AnyInstance:
   Exclude:
-   - spec/requests/todo_lists/todo_items/completed_spec.rb
+    - spec/jobs/complete_all_todo_items_job_spec.rb
+    - spec/requests/todo_lists/todo_items/completed_spec.rb
 
 RSpec/ExampleLength:
-  Exclude:
-    - spec/controllers/api/todo_lists_controller_spec.rb
+  Max: 8
 
 RSpec/MessageChain:
   Exclude:

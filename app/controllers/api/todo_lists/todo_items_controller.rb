@@ -30,6 +30,17 @@ module Api
         end
       end
 
+      # PATCH /api/todolists/:todo_list_id/todoitems/complete_all
+      def complete_all
+        if todo_list
+          CompleteAllTodoItemsJob.perform_later(todo_list.id)
+
+          render json: { message: "The job to complete all todo items has been enqueued." }, status: :accepted
+        else
+          head :not_found
+        end
+      end
+
       private
 
       def todo_item_params
