@@ -17,9 +17,17 @@ Metrics/BlockLength:
   Exclude:
     - config/environments/development.rb
 
+RSpec/AnyInstance:
+  Exclude:
+   - spec/requests/todo_lists/todo_items/completed_spec.rb
+
 RSpec/ExampleLength:
   Exclude:
     - spec/controllers/api/todo_lists_controller_spec.rb
+
+RSpec/MessageChain:
+  Exclude:
+    - spec/requests/todo_lists/todo_items/completed_spec.rb
 
 Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
